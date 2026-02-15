@@ -1,0 +1,233 @@
+/*   reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: arial, helvetica, sans-serif;
+  background-image: linear-gradient(to bottom, #000, gray, #000);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/* fin reset */
+#wrapper {
+  margin: 25px auto;
+  width: 1180px;
+  background-color: #fff;
+
+  /* ATTENTION : il manque des propriétés pour les coins arrondis et les ombrages */
+}
+
+header h1 {
+  text-align: center;
+  color: #139c19;
+
+  /* ATTENTION : la valeur pour la propriété text-shadow n'est pas corecte. Il devrait y avoir des valeurs pour la position de l'ombre (plusieurs fois das la page) */
+  text-shadow: #000;
+}
+
+h2 {
+  color: #139c19;
+  text-shadow: #000;
+}
+
+h3 {
+  color: #000;
+}
+
+.form {
+  /* ATTENTION : ok mais c'est compliqué */
+  width: 40px;
+  height: 20px;
+  border-radius: 20px 20px 0 0;
+  transform: rotate(-90deg);
+  background: green;
+  display: inline-block;
+}
+
+p {
+  margin: 15px 0 15px 0;
+}
+
+main .trans {
+  color: #777;
+  font-family: italic;
+  opacity: 0.2;
+}
+
+.menu-panneau {
+  /* ATTENTION : erreur de conception. La navigation devrait avoir la même largeur que le contenu principal */
+  width: 1000px;
+  background-image: linear-gradient(to bottom, #444, #111);
+  text-shadow: #9c9c9c;
+  position: relative;
+  text-align: center;
+  margin: 15px auto;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.item {
+  display: table-cell;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+.item>a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: white;
+}
+
+.item a:hover {
+  text-decoration: none;
+  color: #fafafa;
+  background-image: linear-gradient(to bottom, #19b123, #139c19);
+}
+
+.panneau {
+  background-color: green;
+  padding: 2em;
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  /* ATTENTION : erreur de conception. C'est sur cet élément que la largeur de 550px devrait être définie */
+}
+
+.item:hover .panneau {
+  display: block;
+
+  /* ATTENTION : devrait être défini sur .panneau */
+  background-image: linear-gradient(to bottom, #19b123, #139c19);
+}
+
+.conteneur-panneau-menu {
+  width: 550px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 auto;
+  margin: 0 0 20px 0;
+}
+
+.conteneur-panneau-menu a {
+  display: block;
+  text-decoration: none;
+
+  /* ATTENTION : il manque des propriétés pour la mise en forme des liens */
+}
+
+.conteneur-panneau-menu h3 {
+  text-align: center;
+}
+
+.part .partie {
+  /* ATTENTION : erreur de conception mais cette propriété est surchargée ensuite */
+  width: 500px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.partie:first-child {
+  width: 70%;
+}
+
+.partie:last-child {
+  width: 30%;
+
+  /* ATTENTION : devrait être des ombres, pas des bordures */
+  border-left: 2px solid gray;
+}
+
+.loll {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.lol {
+  display: table-cell;
+}
+
+.tol {
+  border-right: 1px solid gray;
+}
+
+footer .mom li {
+  display: inline-block;
+}
+
+.mom a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  background-color: green;
+  color: #e9f6e9;
+  width: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  border-top: 1px solid #139c19;
+  text-align: center;
+}
+
+footer a {
+  /* ATTENTION :
+	- devrait être défini sur ".mom a"
+	- simplifiez (border-radius:50px;) */
+  border-radius: 50px 50px 50px 50px;
+}
+
+footer a:hover {
+  color: #000;
+  background-color: #19b123;
+}
+
+aside figcaption {
+  color: green;
+
+  /* ATTENTION : inutile ici, c'est le comportement par défaut */
+  text-align: left;
+  font-weight: bold;
+}
+
+main .fi {
+  text-align: right;
+  opacity: 0.3;
+}
+
+.tof figure {
+  float: left;
+  margin: 0px 15px 15px 0px;
+
+  /* ATTENTION : cet élément devrait être aligné à gauche de la page */
+}
+
+.clear {
+  clear: both;
+}
+
+main {
+  margin-left: 40px;
+  margin-right: 40px;
+
+  /* ATTENTION : inutile ici */
+  height: 100%;
+}
+
+.conteneur-panneau-menu figure {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
